@@ -1,0 +1,75 @@
+<html>
+    <body>
+        <form action="#" method="post"> <!-- action="h1.html" : here h1 file will open-->
+            <fieldset>
+                <legend>
+                    Login Form
+                </legend>
+                <input type="text" placeholder="Enter User Name" name="Uname">Name <br/>
+                 <!--input tag= inline + stand alone-->
+                 <input type="password" name="pwd" required>Password <br/>
+                  <!-- here br = for new line & for mandatory= required-->
+                 <input type="email" name="eid">Email<br/>
+                 <input type="number" min="0" max="100" step="5">Number<br/>
+                 <input type="tel">Number2<br/>
+
+                 <input type="date">DOB <br/> <!-- date picker-->
+                 <input type="color">select color<br/>  <!-- color picker-->
+                 <input type="file" accept=".jpg " multiple> Attach cv<br/>  <!-- file attachment field-->
+                 <input type="search">Search here <br/>  <!-- search bar-->
+                 <input type="range" min="0" max="200" value="50"> <br/>
+                 
+
+                 <input list="browsers" name="browser">
+                 <datalist id="browsers">
+                    <option value="chrome">
+                    <option value="value">
+                    <option value="firefox">
+                 </datalist> <br/>
+
+                 <!-- hidden = hidden to user & submitted with form
+                  readonly= displayed to user and submitted with form
+                  disabled = displayed to user but not submitted with form-->
+                  <input type="text" name="r" readonly value="read"><br/>
+                  <input type="text" name="h" hidden value="hide"><br/>
+                  <input type="text" name="d" disabled value="disabled"><br/>
+
+                  <input type="radio" name="r1"  value="Male">Male
+                  <input type="radio" name="r1"  value="Female">Female<br/> <!-- name should be same-->
+
+                  <input type="checkbox" name="c1" value="Ahm">Ahmedabad
+                  <input type="checkbox" name="c1" value="surat">Surat<br/>
+
+                  <input type="text" > <label >Username</label><br/>
+                  <label ><input type="color">Select color</label> <br/>
+
+                  <textarea row="20" col="50"> <Address></Address></textarea>
+
+                  <!-- select=container of drop down -->
+                  <select> 
+                    <option >ahmedabad</option>
+                    <option >gandhinagar</option>
+                    <option >surat</option>
+                  </select>
+
+                  <select> 
+                    <option selected disabled hidden>
+                        --select city--
+                        <optgroup label="Gujarat">
+                            <option >Ahmedabad</option>
+                            <option >Surat</option>
+                            <option >Gandhinagar</option>
+                        </optgroup>
+
+                        <optgroup label="Maharashtra">
+                            <option >Mumbai</option>
+                            <option >Pune</option>
+                        </optgroup>
+                    </option>
+                  </select>
+
+                 <input type="submit"><input type="reset"> 
+            </fieldset>
+        </form>
+    </body>
+</html>
